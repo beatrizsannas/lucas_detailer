@@ -26,17 +26,13 @@ const getSystemInstruction = () => {
     3. Sempre formate os valores em Reais (R$).
     4. Tente vender os benefícios dos serviços (ex: Vitrificação protege contra o sol).
     5. Nunca invente preços que não estão na lista.
+    6. Se perguntarem o preço, responda direto, não enrole.
   `;
 };
 
 export const sendMessageToGemini = async (message: string): Promise<string> => {
   try {
-    const apiKey = process.env.API_KEY;
-    if (!apiKey) {
-        return "Erro de configuração: Chave de API não encontrada.";
-    }
-
-    const ai = new GoogleGenAI({ apiKey });
+    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
     
     const response = await ai.models.generateContent({
       model: "gemini-2.5-flash",

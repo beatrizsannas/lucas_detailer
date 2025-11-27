@@ -29,9 +29,9 @@ function App() {
              rel="noreferrer"
              className="group flex items-center gap-2 text-sm font-bold bg-white/5 hover:bg-brand-purple active:scale-95 px-4 py-2 rounded-full transition-all border border-white/10 shadow-[0_0_15px_rgba(0,0,0,0.5)]"
           >
-            <Phone size={16} className="text-brand-purple md:text-white group-hover:text-white transition-colors" /> 
-            <span className="hidden md:inline">(84) 99652-2117</span>
-            <span className="md:hidden">Contato</span>
+            <Phone size={16} className="text-brand-purple group-hover:text-white transition-colors duration-300" /> 
+            <span className="hidden md:inline text-gray-200 group-hover:text-white transition-colors">(84) 99652-2117</span>
+            <span className="md:hidden text-gray-200 group-hover:text-white transition-colors">Contato</span>
           </a>
         </div>
       </nav>
@@ -40,7 +40,7 @@ function App() {
         <Hero />
 
         {/* Services Section */}
-        <section id="servicos" className="py-16 md:py-20 relative overflow-hidden bg-brand-dark">
+        <section id="servicos" className="py-16 md:py-20 relative overflow-hidden bg-brand-dark scroll-mt-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-10 md:mb-12">
               <span className="text-brand-purple tracking-widest text-xs font-bold uppercase mb-2 block">Catálogo Oficial</span>
@@ -110,14 +110,14 @@ function App() {
               </a>
             </div>
             
-            {/* Added padding at bottom to give breathing room before footer */}
+            {/* Padding bottom extra for mobile scrolling */}
             <div className="pb-8"></div>
           </div>
         </section>
       </main>
 
-      {/* Footer - Compacted */}
-      <footer id="contato" className="bg-[#020202] py-8 md:py-12 pb-24 md:pb-8 border-t border-white/10 relative overflow-hidden">
+      {/* Footer */}
+      <footer id="contato" className="bg-[#020202] pt-10 pb-20 md:pb-10 border-t border-white/10 relative overflow-hidden mt-auto">
         {/* Decorative elements */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-brand-purple to-transparent opacity-50"></div>
 
@@ -161,7 +161,7 @@ function App() {
             </div>
           </div>
           
-          <div className="mt-8 pt-6 border-t border-white/5 text-center text-gray-600 text-xs pb-10">
+          <div className="mt-8 pt-6 border-t border-white/5 text-center text-gray-600 text-xs">
             <p>&copy; {new Date().getFullYear()} Lucas Detailer. Todos os direitos reservados.</p>
           </div>
         </div>
