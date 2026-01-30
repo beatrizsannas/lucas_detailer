@@ -32,7 +32,7 @@ export const MOTO_SERVICES: ServiceCategory = {
     { id: 'm2', name: 'Revitalização do Cano', price: 20, features: ["Remoção de oxidação superficial", "Polimento de metais", "Brilho intenso"] },
     { id: 'm3', name: 'Revitalização de Plásticos', price: 40, features: ["Hidratação profunda dos plásticos", "Proteção contra ressecamento", "Acabamento seco (não pega poeira)"] },
     { id: 'm4', name: 'Enceramento Manual', price: 50, features: ["Aplicação de cera premium", "Proteção contra raios UV", "Toque aveludado na pintura"] },
-    { id: 'm5', name: 'Clareamento (Pop)', price: 60, features: ["Recuperação da cor original", "Remoção de amarelados", "Proteção plástica"] },
+    { id: 'm5', name: 'Clareamento (Pop)', price: 70, features: ["Recuperação da cor original", "Remoção de amarelados", "Proteção plástica"] },
     { 
       id: 'm6', 
       name: 'Vitrificação de Plásticos', 
@@ -72,7 +72,7 @@ export const CAR_SERVICES: ServiceCategory = {
     { 
       id: 'c2', 
       name: 'Clareamento de Farol', 
-      price: 50, 
+      price: 60, 
       description: "Valor por unidade",
       longDescription: "Faróis amarelados reduzem a visibilidade noturna e envelhecem seu carro. Recuperamos a transparência e a segurança.",
       features: [
